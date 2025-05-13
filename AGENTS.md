@@ -1,6 +1,3 @@
-# Contributor Guide
-This guide lives at `AGENTS.md` in the repository root.
-
 Welcome to the OpenAI Agents SDK repository. This file contains the main points for new contributors.
 
 ## Repository overview
@@ -14,13 +11,7 @@ Welcome to the OpenAI Agents SDK repository. This file contains the main points 
 
 ## Local workflow
 
-1. Ensure [`uv`](https://docs.astral.sh/uv/) is available, then install dev dependencies:
-
-   ```bash
-   make sync
-   ```
-
-2. Format, lint and type‑check your changes:
+1. Format, lint and type‑check your changes:
 
    ```bash
    make format
@@ -28,7 +19,7 @@ Welcome to the OpenAI Agents SDK repository. This file contains the main points 
    make mypy
    ```
 
-3. Run the tests:
+2. Run the tests:
 
    ```bash
    make tests
@@ -36,7 +27,7 @@ Welcome to the OpenAI Agents SDK repository. This file contains the main points 
 
    To run a single test, use `uv run pytest -s -k <test_name>`.
 
-4. Build the documentation (optional but recommended for docs changes):
+3. Build the documentation (optional but recommended for docs changes):
 
    ```bash
    make build-docs
@@ -73,6 +64,3 @@ Commit messages should be concise and written in the imperative mood. Small, foc
 - Consistent style: code formatted with `ruff format`, imports sorted, and type hints passing `mypy`.
 - Clear documentation for any public API changes.
 - Clean history and a helpful PR description.
-
-Happy contributing!
-
